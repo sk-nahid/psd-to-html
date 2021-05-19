@@ -1,0 +1,321 @@
+
+
+/*basic setup
+=================================================*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-family: 'Titillium Web', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/*Reuseble components
+=================================================*/
+
+.row{
+    max-width: 114rem;
+    margin: auto;
+}
+.btn{
+    background: #eb7d4b;
+    margin: auto;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+.btn:hover{
+    background: #db8861;
+    
+}
+
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+section{
+    padding: 8rem 0;
+    margin:0 auto;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    width: auto;
+    
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: rgb(204, 204, 204);
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+h4 {
+    font-size: 1.8rem;
+    padding-top:4rem;
+    text-align: center;
+    font-weight: 200;
+}
+/*Header style
+=================================================*/
+
+header{
+    background: #87509c;
+    height: 85vh;
+    position: relative;
+}
+.logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+    
+}
+.main-nav li{
+    display: inline-block;
+    
+    
+}
+
+.main-nav li a{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.8s;
+}
+.main-nav li:hover a{
+    
+    background:#643a79;
+    border-radius: 0.5rem;
+}
+.main-nav li:active a{
+    background:#643a79;
+    border-radius: 0.5rem;
+}
+
+.hero-text-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.hero-text-box h1 {
+    
+    font-size: 3.5rem;
+    color: white;
+}
+
+/*service section style
+=================================================*/
+
+.services{
+    background: #17c2a4;
+    color: white;
+    text-align: center;
+    
+}
+.services p{
+    font-size: 1.8rem;
+    width: 62rem;
+    font-weight: 200;
+    margin: auto;
+}
+.section-icom{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+.section-box h3{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    margin-bottom:2rem;
+
+}
+
+.section-box p{
+    font-size: 1.6rem;
+    font-weight: 200;
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+}
+
+/*team section style
+=================================================*/
+
+.team{
+    background: #e7e7e7;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.team p{
+    font-size: 1.8rem;
+    width: 62rem;
+    font-weight: 200;
+    margin: auto;
+}
+.team p.team-tag{
+    color: blue;
+    margin-bottom:2rem;
+    margin-top: .5rem;
+}
+.team-icon{
+    height: 18rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: 7rem;
+}
+.team-box h3{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+    
+
+}
+.team-box p{
+    font-size: 1.6rem;
+    font-weight: 200;
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+}
+.social-link {
+    margin-top:2rem;
+}
+.social-link ul li{
+    display: inline-block;
+}
+.social-link ul li a{
+    color: white ;
+    margin: 0 0.5rem;
+}
+.social-link ul li a:link i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    transition: 1s;
+}
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+/*skill section style
+=================================================*/
+
+.skill{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.skill p{
+    font-size: 1.8rem;
+    width: 62rem;
+    font-weight: 200;
+    margin: auto;
+}
+.skill h3{
+    color: black;
+    font-size: 1.6rem;
+}
+.skill .skill-box{
+    margin-top: 5rem;
+}
+
+svg.radial-progress circle{
+    stroke-width: 10;
+    
+    
+}
+svg.radial-progress text{
+    fill: black;
+    font: 1.6rem;
+}
+svg.web-design circle{
+    stroke:#30bae7;
+}
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.graphic-design circle{
+    stroke: #15c7a8;
+}
+svg.ul-ux circle{
+    stroke: #eb7d4b;
+}
+
+/*portfolio section style
+=================================================*/
+
+.portfolio{
+    background: #ffdd99;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.portfolio p{
+    font-size: 1.8rem;
+    width: 62rem;
+    font-weight: 200;
+    margin: auto;
+}
+.protfolio-buton{
+    width: 8rem;
+    text-transform: uppercase;
+}
+.protfolio-buton:hover{
+    background: white;
+    box-shadow: inset 0 .3rem .5rem black;
+}
+.portfolio-box img{
+    width: 90%;
+    height: auto;
+    margin-top: 4rem;
+}
+button.portfolio-btn-last {
+    background: #000000;
+    color: white;
+    margin: auto;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    border: none;
+}
+button.portfolio-btn-last:hover{
+    background: white;
+    color: #000;
+    box-shadow: inset 0 .3rem .5rem black;
+}
